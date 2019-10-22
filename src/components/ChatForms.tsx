@@ -9,7 +9,7 @@ const ChatForms: React.FC<Props> = (props: Props): ReactElement => {
   return (
     <div>
       Here are some forms
-      <button onClick={e => props.sendMessage("Hello")}>Click Me</button>
+      <button onClick={() => props.sendMessage("Hello")}>Click Me</button>
     </div>
   );
 };
