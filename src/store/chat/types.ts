@@ -10,16 +10,10 @@ export interface ChatState {
 }
 
 export const ADD_MESSAGE = "ADD_MESSAGE";
-export const RECIEVE_MESSAGE = "RECIEVE_MESSAGE";
 
 interface AddMessageAction {
   type: typeof ADD_MESSAGE;
   payload: Message;
 }
 
-interface RecieveMessageAction {
-  type: typeof RECIEVE_MESSAGE;
-  payload: Message;
-}
-
-export type ChatActionTypes = AddMessageAction | RecieveMessageAction;
+export type ChatActionTypes = AddMessageAction;

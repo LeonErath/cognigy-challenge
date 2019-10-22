@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement, useState } from "react";
 import styled from "styled-components";
 
 interface Props {
@@ -6,10 +6,17 @@ interface Props {
 }
 
 const ChatForms: React.FC<Props> = (props: Props): ReactElement => {
+  const [message, setMessage] = useState("");
+
   return (
     <div>
-      Here are some forms
-      <button onClick={() => props.sendMessage("Hello")}>Click Me</button>
+      <input
+        value={message}
+        onChange={e => setMessage(e.target.value)}
+        className="chat-input"
+        placeholder="Type a message..."
+      />
+      <button onClick={() => props.sendMessage(message)}>Click Me</button>
     </div>
   );
 };
