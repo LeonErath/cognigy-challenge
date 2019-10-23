@@ -4,7 +4,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/LeonErath/cognigy-challenge">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="public/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Cognigy Interview Challenge</h3>
@@ -21,6 +21,19 @@
 <img src="images/screenshot_web.png" alt="Screenshot">
 <img src="images/screenshot_handy_vertical.png" alt="Screenshot" height="300">
 <img src="images/screenshot_handy_horizontal.png" alt="Screenshot" width="300">
+
+### Requirements 
+
+| ID    | Description                                                  | Impl. |
+| :---- | ------------------------------------------------------------ | :---: |
+| R.1   | connects to an existing Cognigy.AI bot                       |   ✓   |
+| R.2   | shows a text input field with a “send” button                |   ✓   |
+| R.2.1 | Clicking ‘send’ or hitting ‘return’ should send a message to the bot |   ✓   |
+| R.3   | receives messages from the Cognigy.AI bot                    |   ✓   |
+| R.4   | shows a graphical conversation history with “chat bubbles” for user and bot messages |   ✓   |
+| R.4.1 | The bubbles should be visually distinguishable by alignment and color depending on their source (user or bot) |   ✓   |
+
+
 
 ### Built With
 
