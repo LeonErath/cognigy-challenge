@@ -15,6 +15,22 @@ const Chat = styled.div`
   }
 `;
 
+const Empty = styled.div`
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(246, 248, 250);
+
+  > div {
+    color: rgb(132, 132, 132);
+    margin-top: 16px;
+    font-weight: 300;
+    font-size: 20px;
+  }
+`;
+
 interface MessageProps {
   source: "bot" | "user";
 }
@@ -37,6 +53,14 @@ interface Props {
 
 const ChatHistory: React.FC<Props> = (props: Props): ReactElement => {
   const { messages } = props.chat;
+  if (messages.length === 0) {
+    return (
+      <Empty>
+        <img src="./empty.svg" alt="Empty" width="200"></img>
+        <div>Please write a message to start a conversation.</div>
+      </Empty>
+    );
+  }
   const chat = (
     <Chat>
       {messages.map((message, i) => (

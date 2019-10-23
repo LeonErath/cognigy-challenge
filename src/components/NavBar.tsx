@@ -8,10 +8,18 @@ const Header = styled.div`
   padding-left: 16px;
   padding-right: 16px;
   border-bottom: 1px solid #e7e7e7;
+  > img {
+    margin-right: 16px;
+  }
 `;
 
 const NavBar: React.FC = (): ReactElement => {
-  return <Header>Live Chat</Header>;
+  return (
+    <Header>
+      <img src="./logo.svg" width="26"></img>
+      <div> Live Chat</div>
+    </Header>
+  );
 };
 
 export default NavBar;
