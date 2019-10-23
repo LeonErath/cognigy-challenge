@@ -1,13 +1,27 @@
 import React from "react";
+import styled from "styled-components";
 import { SocketClient } from "@cognigy/socket-client";
 import { connect } from "react-redux";
 import { AppState } from "./store";
 import { addMessage } from "./store/chat/actions";
 import { ChatState } from "./store/chat/types";
+import NavBar from "./components/NavBar";
 import ChatFroms from "./components/ChatForms";
 import ChatHistory from "./components/ChatHistory";
 
-const Token = process.env.REACT_APP_TOKEN || "";
+const Container = styled.div`
+  /* Height and width fallback for older browsers. */
+  height: 100%;
+  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+`;
+
+const TOKEN = process.env.REACT_APP_TOKEN || "";
+const ENDPOINT = process.env.REACT_APP_ENDPOINT || "";
 
 interface AppProps {
   addMessage: typeof addMessage;
@@ -20,7 +34,7 @@ class App extends React.Component<AppProps> {
   constructor(props: AppProps) {
     super(props);
 
-    this.client = new SocketClient("https://endpoint-demo.cognigy.ai", Token, {
+    this.client = new SocketClient(ENDPOINT, TOKEN, {
       forceWebsockets: true
     });
   }
@@ -53,11 +67,11 @@ class App extends React.Component<AppProps> {
     console.log(chat);
 
     return (
-      <div>
-        Hello World
+      <Container>
+        <NavBar></NavBar>
         <ChatHistory chat={chat}></ChatHistory>
         <ChatFroms sendMessage={this.sendMessage}></ChatFroms>
-      </div>
+      </Container>
     );
   }
 }

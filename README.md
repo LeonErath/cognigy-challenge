@@ -1,44 +1,77 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
-## Available Scripts
+<br />
+<p align="center">
+  <a href="https://github.com/LeonErath/cognigy-challenge">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-In the project directory, you can run:
+  <h3 align="center">Cognigy Interview Challenge</h3>
 
-### `yarn start`
+  <p align="center">
+    Development of a Web-based Chatbot UI that connects to Cognigy
+  </p>
+</p>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- ABOUT THE PROJECT -->
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## About The Project
 
-### `yarn test`
+<img src="images/screenshot_web.png" alt="Screenshot">
+<img src="images/screenshot_handy_vertical.png" alt="Screenshot" height="300">
+<img src="images/screenshot_handy_horizontal.png" alt="Screenshot" width="300">
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Built With
 
-### `yarn build`
+- [React](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org)
+- [Redux](https://redux.js.org)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- GETTING STARTED -->
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get a local copy up and running follow these simple steps.
 
-### `yarn eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- yarn or npm
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```sh
+git clone https://github.com/LeonErath/cognigy-challenge.git
+cd cognigy-challenge
+yarn install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Development
 
-## Learn More
+To setup the local development enviroment follow these steps:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+yarn start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The web application will then be available under [http://localhost:3000/](http://localhost:3000/).
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+
+## Contact
+
+Leon Erath- [@leonerath](https://twitter.com/leonerath) - leon-erath@hotmail.de
+
+Project Link: [https://github.com/LeonErath/cognigy-challenge](https://github.com/LeonErath/cognigy-challenge)
+
+[issues-shield]: https://img.shields.io/github/issues/LeonErath/cognigy-challenge?style=flat-square
+[issues-url]: https://github.com/LeonErath/cognigy-challenge/issues
+[license-shield]: https://img.shields.io/github/license/LeonErath/cognigy-challenge?style=flat-square
+[license-url]: https://github.com/LeonErath/cognigy-challenge/blob/master/LICENSE
+[product-screenshot]: images/screenshot.png
