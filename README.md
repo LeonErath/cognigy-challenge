@@ -59,6 +59,21 @@ cd cognigy-challenge
 yarn install
 ```
 
+All environment variables are stored in a .env file. To compile the project a corresponding file has to be created.
+
+```sh
+touch .env
+```
+
+Add the necessary token and endpoint in the .env file as follows
+
+```
+// .env
+REACT_APP_TOKEN=secret_token
+REACT_APP_ENDPOINT=https://endpoint...
+```
+
+
 ### Development
 
 To setup the local development enviroment follow these steps:
