@@ -76,8 +76,7 @@ class App extends React.Component<AppProps> {
   }
 }
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-const mapStateToProps = (state: AppState) => ({
+const mapStateToProps = (state: AppState): AppState => ({
   chat: state.chat
 });
 
