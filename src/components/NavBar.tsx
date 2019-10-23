@@ -16,7 +16,7 @@ const Header = styled.div`
 const NavBar: React.FC = (): ReactElement => {
   return (
     <Header>
-      <img src="./logo.svg" width="26"></img>
+      <img src="./logo.svg" width="26" alt="Logo"></img>
       <div> Live Chat</div>
     </Header>
   );

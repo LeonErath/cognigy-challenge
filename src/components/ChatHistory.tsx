@@ -24,6 +24,7 @@ const Empty = styled.div`
   background: rgb(246, 248, 250);
 
   > div {
+    text-align: center;
     color: rgb(132, 132, 132);
     margin-top: 16px;
     font-weight: 300;
